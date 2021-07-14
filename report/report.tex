@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+
+% Some typesetting decisions
+\usepackage[utf8]{inputenc}
+
+% Typesetting and basic formatting. 
+% This PDF is made to be read on-screen,
+% so we use large fonts and little margin
+\usepackage[margin=30mm]{geometry}
+\usepackage{setspace}
+\setstretch{1.1}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{12pt}
+\frenchspacing 
+\sloppy
+
+
+% Links
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor={blue!50!black},citecolor={blue!50!black}, urlcolor={red!50!black}}  
+% This one is for demo-purposes only, don't use it in your submission ;) 
+\usepackage{blindtext}
+
+% Citation with natbib: 
+% Use \citet{} and \citep{} only, not \cite{}
+\usepackage{natbib}
+\bibliographystyle{abbrvnat}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% non template commands
+
+\title{\vskip-3em \bf 
+    Climate Network Communities for Precipitation Data
+    }
+\author{
+    A Summary Written by Johannes Schulz and Adrian Stock \\
+    \texttt{johannes.schulz@student.uni-tuebingen.de} \\
+    \texttt{adrian.stock@student.uni-tuebingen.de}
+}
+\date{\it Machine Learning Approaches in Climate Science\\Summer Term 2021}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}\vskip-1.5em \noindent
+    We looked at different papers that detected network communities on climate data \citep*{community_structure,complex,exploration}.
+    To implement the stochastic block model, we used the pysbm package \citep{sbms}.
+\end{abstract}
+
+\bibliography{bibfile}
+\end{document}

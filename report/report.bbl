@@ -1,0 +1,33 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Donges et~al.(2009)Donges, Zou, Marwan, and Kurths]{complex}
+J.~F. Donges, Y.~Zou, N.~Marwan, and J.~Kurths.
+\newblock Complex networks in climate dynamics.
+\newblock \emph{The European Physical Journal Special Topics}, 174\penalty0
+  (1):\penalty0 157--179, 2009.
+
+\bibitem[Funke and Becker(2019)]{sbms}
+T.~Funke and T.~Becker.
+\newblock Stochastic block models: A comparison of variants and inference
+  methods.
+\newblock \emph{PloS one}, 14\penalty0 (4):\penalty0 e0215296, 2019.
+
+\bibitem[Steinhaeuser et~al.(2009)Steinhaeuser, Chawla, and
+  Ganguly]{exploration}
+K.~Steinhaeuser, N.~V. Chawla, and A.~R. Ganguly.
+\newblock An exploration of climate data using complex networks.
+\newblock In \emph{Proceedings of the Third International Workshop on Knowledge
+  Discovery from Sensor Data}, pages 23--31, 2009.
+
+\bibitem[Tsonis et~al.(2011)Tsonis, Wang, Swanson, Rodrigues, and
+  da~Fontura~Costa]{community_structure}
+A.~A. Tsonis, G.~Wang, K.~L. Swanson, F.~A. Rodrigues, and L.~da~Fontura~Costa.
+\newblock Community structure and dynamics in climate networks.
+\newblock \emph{Climate dynamics}, 37\penalty0 (5-6):\penalty0 933--940, 2011.
+
+\end{thebibliography}
