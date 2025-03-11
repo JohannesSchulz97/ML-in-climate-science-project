@@ -1,0 +1,134 @@
+%%% -----------------------------------
+%%% -----------------------------------
+%%% ----- META DATA (TITLE & AUTHORS)
+%%% -----------------------------------
+%%% -----------------------------------
+\include{preamble}
+\usepackage{lipsum}
+\title{Title of the project}
+\author{Abc Xyz and Def Uvw}
+\date{\today{}}
+\begin{document}
+\maketitle
+
+%%% -----------------------------------
+%%% -----------------------------------
+%%% ----- ABSTRACT
+%%% -----------------------------------
+%%% -----------------------------------
+
+\begin{abstract}
+Brief summary of the main idea, its motivation, the main results, and outlook. Should not be more than 150 words. \lipsum[2-2]
+\end{abstract}
+
+%%% -----------------------------------
+%%% -----------------------------------
+%%% ----- MOTIVATION AND BACKGROUND
+%%% -----------------------------------
+%%% -----------------------------------
+
+\section{Motivation and Background}
+\label{sec:motivation_background}
+
+\lipsum[2-2]
+
+Climate networks can be constructed using different `similarity'
+measures. Let \(\vec{x}_i = (x_{i1}, x_{i2}, \dots, x_{iN_t})^T\) be a
+time series of a climatic observable such as surface air temperature or
+sea level pressure measured at a location
+\(i; i \in \{1, 2, \dots, N_x\}\). If we assume that each \(\vec{x}_i\)
+is normalized to mean zero and standard deviation one, the Pearson's
+correlation matrix can simply be written as,
+
+\begin{eqnarray}
+\mathbf{C}^{PC} = \mathbf{X^T} \mathbf{X},
+\label{eq:corrmat}
+\end{eqnarray}
+where
+\(\mathbf{X} = [ \vec{x}_1, \vec{x}_2, \dots, \vec{x}_{N_x} ]\). A
+`climate network' is constructed by thresholding \(\mathbf{C}\) to
+remove low correlation values which are likely due to noise. The
+adjacency matrix of the climate network is, 
+\begin{eqnarray}
+\mathbf{A} = F(\mathbf{C}^{PC}) - \mathbb{I}
+\label{eq:adjmat}
+\end{eqnarray}
+where \(F\) is an element-wise operator on the correlation matrix
+\(\mathbf{C}^{PC}\) which is typically a Heaviside function, 
+\begin{eqnarray}
+F(\mathbf{C}^{PC}) = 
+\begin{cases}
+1, \quad |c^{PC}_{ij} - \epsilon | > 0\\
+0, \quad \textrm{otherwise}
+\end{cases}
+\label{eq:heaviside}
+\end{eqnarray}
+where \(c_{ij}^{PC} \in \mathbf{C}^{PC}\) and \(\epsilon\) is a
+threshold above which correlation values are less likely to be caused by
+random noise.
+
+\lipsum[4-4]
+
+We also want to cite this paper~\cite{goswami2018abrupt} at this point. We refer the reader to~\cite{ghil2002advanced} and \cite{reichstein2019deep} for an overview.
+
+%%% -----------------------------------
+%%% -----------------------------------
+%%% ----- DATA AND METHODS
+%%% -----------------------------------
+%%% -----------------------------------
+
+\section{Data and Methods}
+\label{data_methods}
+
+\lipsum[2-4]
+
+%%% -----------------------------------
+%%% -----------------------------------
+%%% ----- RESULTS AND DISCUSSION
+%%% -----------------------------------
+%%% -----------------------------------
+
+\section{Results and discussion}
+\label{results_discussion}
+
+\lipsum[2-3]
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=1.15\textwidth]{201_firstlook_stationdata_timecoveragedetail.pdf}
+    \caption{\textbf{Station Coverage}. Data coverage of the weather stations around Heshang Cave between 1940 to 2020.}
+    \label{fig:station_coverage}
+\end{figure}
+
+\lipsum[5-5]
+
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=1.15\textwidth]{301_effp_dr_linearmodel_yearly_fits_lognorm.pdf}
+    \caption{Yearly distribution of drip rates.}
+    \label{fig:my_label}
+\end{figure}
+
+\lipsum[9-12]
+
+%%% -----------------------------------
+%%% -----------------------------------
+%%% ----- CONCLUSION AND OUTLOOK
+%%% -----------------------------------
+%%% -----------------------------------
+
+\section{Conclusion and outlook}
+\label{concl_outlook}
+
+\lipsum[1-2]
+
+%%% -----------------------------------
+%%% -----------------------------------
+%%% ----- REFERENCES
+%%% -----------------------------------
+%%% -----------------------------------
+
+\bibliography{refs}
+\bibliographystyle{ieeetr}
+
+
+\end{document}
